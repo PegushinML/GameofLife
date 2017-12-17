@@ -41,11 +41,7 @@ public class MultithreadedGame extends AbstractGame {
         while(!isGameOver()) {
             startActivity();
             while (checkActivity()) {
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+
             }
             goToNextStep();
         }
